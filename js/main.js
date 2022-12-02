@@ -73,7 +73,7 @@ class ProductInfo { //passing in data.product
           //   newVCell.classList.add("unknown-maybe-item")
           // }
 
-          if (cornStatus === "corn"){
+          if (cornStatus === "🌽🌽🌽"){
             newCornCell.classList.add( "has-corn" )
           } 
         }
