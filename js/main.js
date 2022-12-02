@@ -45,33 +45,33 @@ class ProductInfo { //passing in data.product
         for( let key in this.ingredients){ //key tells me what number of index
           let newRow = tableRef.insertRow(-1) //insert row at end of table
           let newICell = newRow.insertCell(0) // first cell in row because array indexing
-          let newVCell = newRow.insertCell(1)  // second cell
-          let newCornCell = newRow.insertCell(2) //third cell
+          // let newVCell = newRow.insertCell(1)  // second cell
+          let newCornCell = newRow.insertCell(1) //third cell
           let newIText = document.createTextNode(
             this.ingredients[key].text
           )
-          let vegStatus = this.ingredients[key].vegetarian ?  this.ingredients[key].vegetarian : "unknown" // turnary to return falsy values as "unknown" gentler to non-computer friends
-          let newVText = document.createTextNode(vegStatus)
-          let cornStatus = "unknown" // setting corn status prior to loop so it can be manipulated and so we don't have to set up default
+          // let vegStatus = this.ingredients[key].vegetarian ?  this.ingredients[key].vegetarian : "unknown" // turnary to return falsy values as "unknown" gentler to non-computer friends
+          // let newVText = document.createTextNode(vegStatus)
+          let cornStatus = "🤷" // setting corn status prior to loop so it can be manipulated and so we don't have to set up default
           for (const pattern of badIngredients) { // of give string out of array, in gives index
             if (this.ingredients[key].text.includes(pattern) ){
                 console.log(this.ingredients[key].text)
                 console.log(pattern)
-              cornStatus = "corn"
+              cornStatus = "🌽🌽🌽🌽🌽"
               break // gets out of pattern loop
               }
           }
 
           let newCornText = document.createTextNode(cornStatus)
           newICell.appendChild(newIText)
-          newVCell.appendChild(newVText)
+          // newVCell.appendChild(newVText)
           newCornCell.appendChild(newCornText)
 
-          if (vegStatus === "no"){
-            newVCell.classList.add( "non-veg-item" )
-          } else if ( vegStatus === "unknown" || vegStatus === "maybe"){
-            newVCell.classList.add("unknown-maybe-item")
-          }
+          // if (vegStatus === "no"){
+          //   newVCell.classList.add( "non-veg-item" )
+          // } else if ( vegStatus === "unknown" || vegStatus === "maybe"){
+          //   newVCell.classList.add("unknown-maybe-item")
+          // }
 
           if (cornStatus === "corn"){
             newCornCell.classList.add( "has-corn" )
