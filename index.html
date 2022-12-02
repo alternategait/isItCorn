@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Three Rivers Dietary</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />
+    <link href="fontawesome/css/all.min.css" rel="stylesheet" />
+    <link href="css/tooplate-chilling-cafe.css" rel="stylesheet" />
+<!--
+Tooplate 2118 Chilling Cafe
+https://www.tooplate.com/view/2118-chilling-cafe
+-->
+  </head>
+  <body>
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <img class="logo" src="./logo.png" alt="logo">
+        <h1 class="tm-page-header">Three Rivers Dietary Clinic</h1>
+      </div>
+      <div class="tm-main-content">
+        <section class="tm-section">
+          <h2 class="tm-section-header">Corn Product Allergen Checker</h2>
+            <section>			
+              <label for="barcode"> Enter a UPC barcode number (12 digits)</label>
+              <input type="number" name="barcode" value="" id="barcode">
+              <button type="button" onclick="getFetch();"> Get Value </button>
+              <img id = "product-img" src=" ">
+              <h2 id = "product-name" class="tm-section-header"></h2>
+            </section>
+          <div class="tm-responsive-table">
+            <table id="ingredient-table">
+              <tr class="tm-tr-header">
+                <!-- <th>&nbsp;</th> -->
+                <th>Ingredient</th>
+                <th>vegetarian</th>
+                <th>Corn?</th>
+            </table>
+          </div>
+        </section>
+
+        <!-- About our cafe -->
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Corn and corn product allergies</h2>
+          <p>
+            While it's not common, people can be allergic to corn. This food allergy may cause symptoms such as digestive problems, hives itching, a stuffy nose, or wheezing. Some people with a corn allergy have a serious reaction called anaphylaxis. If you demonstrate signs of anaphylaxis it is a medical emergency and you should call your doctor or local emergency number
+          </p>
+          <p>
+            This allergen checker is designed to recognize the most common corn product ingredients. However, there may be other corn products or incomplete ingredient data. This site is intended to assist in managing your personalized dietary plan and is not intended as medical advice. 
+          </p>
+
+        </section>
+
+      </div>
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          Copyright &copy; 2022 AlternateGait
+          . Design:
+          <a href="https://www.tooplate.com" class="tm-footer-link">Tooplate</a>
+        </p>
+      </footer>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
