@@ -57,7 +57,7 @@ class ProductInfo { //passing in data.product
             if (this.ingredients[key].text.includes(pattern) ){
                 console.log(this.ingredients[key].text)
                 console.log(pattern)
-              cornStatus = "🌽🌽🌽🌽🌽"
+              cornStatus = "🌽🌽🌽"
               break // gets out of pattern loop
               }
           }
