@@ -9,3 +9,8 @@ This is the silly version of another project that I completed. Originally meant 
 HTML 5, CSS, client side JavaScript
 
 This program is a basic fetch from world food data base. It accepts 12 digit UPC and provides a number of data points including ingredients and generally accepted allergens such as dairy, soy, and eggs. However it does not look for corn and corn product (or for a future implentation; vegetables from the nightshade family). I wrote logic to identify corn and corn products including lesser known products such as "modified vegetable oil" so that people who have corn allergies may have an easier time identifying food products they should not consume. 
+
+### Optimizations
+
+- Possibility of adding a barcode scanner
+- changing allergen list for other allergies such as nightshades
