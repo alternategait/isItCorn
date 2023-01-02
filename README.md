@@ -14,3 +14,7 @@ This program is a basic fetch from world food data base. It accepts 12 digit UPC
 
 - Possibility of adding a barcode scanner
 - changing allergen list for other allergies such as nightshades
+
+### Lessons Learned
+
+- The original program was an introduction to API fetches, consuming JSON data, and displaying informationw within elements. 
